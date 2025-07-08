@@ -1,10 +1,10 @@
 /* header */
 header {
-    padding: 15px 40px; /* Adjusted padding */
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Added for vertical alignment */
-    border-bottom: 1px solid #eee; /* Subtle separator */
+    align-items: center;
+    border-bottom: 1px solid #eee;
 }
 
 header a {
@@ -20,12 +20,12 @@ header a:hover {
 
 .login-register-buttons {
     display: flex;
-    gap: 10px; /* Space between buttons */
+    gap: 10px;
 }
 
 .auth-button {
     padding: 8px 15px;
-    background-color: #f0f0f0; /* Light background for default button */
+    background-color: #f0f0f0;
     color: #555;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -68,11 +68,11 @@ header a:hover {
 }
 
 .profile a {
-    width: 45px; /* Slightly smaller */
-    height: 45px; /* Slightly smaller */
-    background: #ccc; /* Lighter background for profile placeholder */
+    width: 45px;
+    height: 45px;
+    background: #ccc;
     border-radius: 50%;
-    display: block; /* Ensure it takes full width/height for content */
+    display: block;
 }
 
 .menu {
@@ -82,13 +82,13 @@ header a:hover {
 }
 
 .menu a {
-    padding: 0px 15px; /* Adjusted padding */
-    text-decoration: none; /* Remove underline */
-    color: #555; /* Default link color */
+    padding: 0px 15px;
+    text-decoration: none;
+    color: #555;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    color: #007bff; /* Hover effect */
+    color: #007bff;
 }
