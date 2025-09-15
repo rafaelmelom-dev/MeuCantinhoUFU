@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meu Cantinho UFU - Manual do Calouro</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            /* reset */
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                color: #333;
+            }
+
+            /* container title */
+            .container-title {
+                padding: 40px 0px 40px 150px;
+                color: #333;
+            }
+
+            /* main content container */
+            .main-content {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 20px 0;
+            }
+
+            .content-wrapper {
+                width: 80%;
+                max-width: 900px;
+                padding: 30px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .content-wrapper h3 {
+                margin-bottom: 15px;
+                color: #007bff;
+            }
+
+            .content-wrapper p {
+                margin-bottom: 10px;
+                text-align: justify;
+                color: #555;
+            }
+
+            .content-wrapper ul {
+                list-style-type: disc;
+                margin-left: 20px;
+                margin-bottom: 15px;
+                color: #555;
+            }
+
+            .content-wrapper li {
+                margin-bottom: 5px;
+            }
+        </style>
+        <script>
+            // $(document).ready(function () {
+            //     $("header").load("header.html");
+            // });
+        </script>
+    </head>
+    <body>
+        <header>
+            <?php include 'header.php'; ?>
+        </header>
+
+        <div class="container-sm my-3">
+            <h1 class="py-4 fw-bold">Manual do Calouro</h1>
+
+            <section class="d-flex justify-content-center">
+                <div
+                    class="container-md shadow-sm p-3 border rounded shadow-sm"
+                >
+                    <h3>Bem-vindo à UFU, Calouro!</h3>
+                    <p>
+                        Parabéns por sua aprovação na Universidade Federal de
+                        Uberlândia! Sabemos que o início da vida universitária
+                        pode ser desafiador, mas estamos aqui para ajudar você a
+                        se adaptar e aproveitar ao máximo essa nova fase. Este
+                        manual foi criado para ser seu guia essencial nos
+                        primeiros passos na UFU.
+                    </p>
+
+                    <h3>Primeiros Passos Essenciais:</h3>
+                    <ul>
+                        <li>
+                            <b>Documentação:</b> Certifique-se de ter todos os
+                            documentos necessários para sua matrícula. Verifique
+                            os prazos no edital.
+                        </li>
+                        <li>
+                            <b>Acesso aos Sistemas:</b> Ative sua conta no
+                            Portal do Estudante e no Moodle. Eles serão suas
+                            principais ferramentas para acessar notas, materiais
+                            de aula e comunicados.
+                        </li>
+                        <li>
+                            <b>Localização:</b> Explore o campus antes das
+                            aulas. Saiba onde ficam seus blocos, laboratórios e
+                            a biblioteca. O campus de Monte Carmelo é acolhedor,
+                            mas é bom se localizar!
+                        </li>
+                        <li>
+                            <b>Transporte:</b> Verifique as opções de transporte
+                            público ou privado para chegar à universidade.
+                            Muitos estudantes utilizam aplicativos de transporte
+                            ou caronas solidárias.
+                        </li>
+                    </ul>
+
+                    <h3>Vida Acadêmica:</h3>
+                    <p>
+                        Adapte-se à rotina de estudos universitária. Participe
+                        das aulas, tire dúvidas com os professores e aproveite
+                        os recursos da biblioteca. Formar grupos de estudo pode
+                        ser muito útil!
+                    </p>
+
+                    <h3>Moradia e Alimentação:</h3>
+                    <p>
+                        Se você ainda não encontrou seu "cantinho", explore a
+                        seção de Moradias do nosso site. Para alimentação, o
+                        Restaurante Universitário (RU) é uma ótima opção, com
+                        refeições a preços acessíveis.
+                    </p>
+
+                    <h3>Dicas Extras:</h3>
+                    <ul>
+                        <li>
+                            <b>Integração:</b> Participe das atividades de
+                            recepção aos calouros, Atléticas e centros
+                            acadêmicos. É uma ótima forma de conhecer pessoas e
+                            se integrar.
+                        </li>
+                        <li>
+                            <b>Saúde:</b> Conheça os serviços de saúde
+                            oferecidos pela universidade ou na cidade. Mantenha
+                            uma rotina saudável.
+                        </li>
+                        <li>
+                            <b>Finanças:</b> Se for gerenciar suas próprias
+                            finanças, planeje seus gastos e procure por
+                            programas de auxílio estudantil, se necessário.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Desejamos a você uma excelente jornada na UFU! Qualquer
+                        dúvida, não hesite em procurar a secretaria do seu curso
+                        ou os colegas mais experientes.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

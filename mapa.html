@@ -5,88 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Meu Cantinho UFU - Mapa Interativo</title>
 
-        <link rel="stylesheet" href="header.css" />
-        <style>
-            /* reset */
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                color: #333;
-            }
-
-            /* container title */
-            .container-title {
-                padding: 40px 0px 40px 150px;
-                color: #333;
-            }
-
-            /* main content container for map */
-            .main-content {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                padding: 20px 0;
-            }
-
-            .map-container {
-                width: 80%;
-                max-width: 900px;
-                height: 500px;
-                background-color: #f0f0f0;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 1.5em;
-                color: #777;
-                border: 1px dashed #ccc;
-            }
-
-            .map-container p {
-                text-align: center;
-                padding: 20px;
-            }
-        </style>
+        <script>
+            $(document).ready(function () {
+                $("header").load("header.html");
+            });
+        </script>
     </head>
     <body>
-        <header>
-            <a href="index.html"><h2>Meu Cantinho UFU</h2></a>
+        <header></header>
 
-            <div class="menu">
-                <a href="moradias.html">Moradias</a>
-                <a href="mapa.html">Mapa</a>
-                <a href="manual.html">Manual do Calouro</a>
-            </div>
+        <div class="container-sm my-3">
+            <h1 class="py-4 fw-bold">Mapa Interativo</h1>
 
-            <div class="user-auth logged-out" id="userAuthContainer">
-                <div class="login-register-buttons">
-                    <a href="#" class="auth-button">Entrar</a>
-                    <a href="#" class="auth-button primary">Cadastro</a>
+            <section>
+                <div
+                    class="d-flex align-items-center justify-content-center w-100 p-5 bg-light border rounded shadow-sm"
+                >
+                    <p class="text-secondary fs-5">
+                        Aqui será exibido um mapa interativo dos anúncios
+                        disponíveis.
+                    </p>
                 </div>
-                <div class="profile">
-                    <a href="#">
-                        <!-- <img src="imagem_perfil">  -->
-                    </a>
-                </div>
-            </div>
-        </header>
-
-        <h1 class="container-title">Mapa Interativo</h1>
-
-        <section class="main-content">
-            <div class="map-container">
-                <p>
-                    Aqui será exibido um mapa interativo dos anúncios
-                    disponíveis.
-                </p>
-            </div>
-        </section>
+            </section>
+        </div>
     </body>
 </html>
