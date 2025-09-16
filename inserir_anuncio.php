@@ -12,12 +12,54 @@ if (!isset($_SESSION["id_anunciante"])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_SESSION["id_anunciante"];
-    $desc = htmlspecialchars($_POST["descricao"]);
-    $valor = htmlspecialchars($_POST["valor"]);
-    $tipo = htmlspecialchars($_POST["tipo_residencia"]);
-    $rua = htmlspecialchars($_POST["rua"]);
-    $num = htmlspecialchars($_POST["numero"]);
-    $bairro = htmlspecialchars($_POST["bairro"]);
+    $desc = htmlspecialchars(trim($_POST["descricao"]));
+    $valor = htmlspecialchars(trim($_POST["valor"]));
+    $tipo = htmlspecialchars(trim($_POST["tipo_residencia"]));
+    $rua = htmlspecialchars(trim($_POST["rua"]));
+    $num = htmlspecialchars(trim($_POST["numero"]));
+    $bairro = htmlspecialchars(trim($_POST["bairro"]));
+
+    if (!isset($rua) || $rua === '') {
+        $_SESSION['error_message'] = 'Algum campo ficou vazio';
+        header("Location: anunciante_painel.php");
+        exit();
+    }
+
+    if (!isset($num) || $num === '') {
+        $_SESSION['error_message'] = 'Algum campo ficou vazio';
+        header("Location: anunciante_painel.php");
+        exit();
+    }
+
+    if (!isset($bairro) || $bairro === '') {
+        $_SESSION['error_message'] = 'Algum campo ficou vazio';
+        header("Location: anunciante_painel.php");
+        exit();
+    }
+
+    if (!isset($valor) || $valor === '') {
+        $_SESSION['error_message'] = 'Algum campo ficou vazio';
+        header("Location: anunciante_painel.php");
+        exit();
+    }
+
+    $valor = filter_var($valor, FILTER_VALIDATE_INT);
+    $num = filter_var($num, FILTER_VALIDATE_INT);
+
+    if ($valor === false || $valor < 0) {
+        $_SESSION['error_message'] = 'Valor incorreto';
+        header("Location: anunciante_painel.php");
+        exit();
+    }
+
+
+    if ($num === false || $num < 0) {
+        $_SESSION['error_message'] = 'Valor incorreto';
+        header("Location: anunciante_painel.php");
+        exit();
+    }
+
+
 
     $pdo->beginTransaction();
 
@@ -103,5 +145,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 }
-
-?>
